@@ -1,11 +1,8 @@
 *Header*
-Menu
-Recipes
-Book a table
-Contacts
+
 
 Specialty coffee in the Practicum Library
-Welcome to our study zone! We've got the coffee to energize you and the cozy vibes to help you get creative. 
+
 
 Hours:
 Monday – Friday (10:00 – 19:00)

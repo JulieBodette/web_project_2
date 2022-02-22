@@ -1,14 +1,23 @@
 .header{
-    background-color: #FFFFFF;
+    background-color: blue;
     background-image: url(../images/background_header.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position:relative; /* so that the child can use absolute positioning */
+    min-height: 720px; /*this makes the default size big enough to fit the picture. without this, div is awkwardly small*/
+    max-height: 800px;
+    padding-left:80px;  /*this makes the "Specialty coffee" and "welcome to our study" 80px from the left*/
+    /*does not affect logo because logo is position absolute AND there is left: 30px which overrides the padding*/
+
 }
 .logo
 {
-    padding-top: 25px;
-    padding-left: 25px;
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    /*use position:absolute be3cause it is in the upper left-position is based on it being in upper corner */
 }
 .nav {
     display:flex;
@@ -16,37 +25,76 @@
     
   }
   .nav-links {
-    padding-top: 25px;
-    padding-right: 75px;
+    position:absolute;
+    top: 30px;
+    right: 80px;
     display:flex;
     column-gap:20px;
+    /*use position:absolute be3cause it is in the upper right-position is based on it being in upper corner */
   }
 
   .nav__link {
       color: #000000; /*fixed it defaulting to purple*/
-      font-weight: bold;
       text-decoration: none;/*removes underline*/
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px
   }
 
   .nav__link:hover {
       color: #2F80ED;
-      transition: color 0.5s ease-out 0.5s;
+      transition: color 0.25s ease-out 0.5s;
   }
 
   .header__title {
-    padding-left: 50px;
-    line-height: 30pt; /*control the spacing between lines */
-    font-weight: 400; /*make it not bold*/
+    line-height: 72px;/*control the spacing between lines */
+    font-weight: 500; /*make it not bold*/
+    background-color: beige;
+
+    margin-top:202px;
+    font-family: Inter; /*fallback ad itt*/
+    font-style: normal;
+    font-size:60px;
+
 
   }
 
   .header__span-accent{
       color:#2F80ED;
-      font-family: 'Noto Serif Display', 'Times New Roman',serif;
+      font-family: 'Noto Serif', 'Times New Roman',serif;
       font-style: italic;
+      font-size: 60px;
+
   }
 
   .header__description {
-    padding-left: 50px;
+      
+    background-color: beige;
+    margin-top:28px; /* re the brief*/
+    font-family: 'Noto Serif', 'Times New Roman',serif;
+    font-size: 20px;
+    line-height: 30px;
+    max-width:580px; /* forces line to break exactly where I want "energize you and / the cozy vibes" */
+
+  }
+
+  .header__image {
+    max-width: 636px;
+    position:absolute;
+    top:124px;
+    right:5px;
+    z-index:1; /*on top of the background. still works without this explicit line of code. */
+  }
+
+  .header__footer {
+    position: absolute;
+    bottom:40px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: beige;
 
   }
