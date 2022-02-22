@@ -1,4 +1,12 @@
 @import "normalize.css";
-@import "header.css";
-@import "menu.css";
+@import "../blocks/header.css";
+@import "../blocks/menu.css";
 /*add more imports here*/
+body{
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: 'Noto Serif Display', 'Times New Roman',serif;
+    }
+
+
+
+    
