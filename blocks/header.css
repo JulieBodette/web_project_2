@@ -7,7 +7,8 @@
 }
 .logo
 {
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 .nav {
     display:flex;
@@ -15,8 +16,8 @@
     
   }
   .nav-links {
-    margin-top: 25px;
-    margin-right: 75px;
+    padding-top: 25px;
+    padding-right: 75px;
     display:flex;
     column-gap:20px;
   }
@@ -30,4 +31,18 @@
   .nav__link:hover {
       color: #2F80ED;
       transition: color 0.5s ease-out 0.5s;
+  }
+
+  .header__title {
+    padding-left: 50px;
+    line-height: 30pt; /*control the spacing between lines */
+    font-weight: 400; /*make it not bold*/
+
+  }
+
+  .header__span-accent{
+      color:#2F80ED;
+      font-family: 'Noto Serif Display', 'Times New Roman',serif;
+      font-style: italic;
+
   }
