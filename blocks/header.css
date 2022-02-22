@@ -5,3 +5,29 @@
     background-position: center;
     background-size: cover;
 }
+.logo
+{
+    margin-top: 25px;
+}
+.nav {
+    display:flex;
+    justify-content:space-between;
+    
+  }
+  .nav-links {
+    margin-top: 25px;
+    margin-right: 75px;
+    display:flex;
+    column-gap:20px;
+  }
+
+  .nav__link {
+      color: #000000; /*fixed it defaulting to purple*/
+      font-weight: bold;
+      text-decoration: none;/*removes underline*/
+  }
+
+  .nav__link:hover {
+      color: #2F80ED;
+      transition: color 0.5s ease-out 0.5s;
+  }
