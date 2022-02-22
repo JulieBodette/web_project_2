@@ -44,5 +44,9 @@
       color:#2F80ED;
       font-family: 'Noto Serif Display', 'Times New Roman',serif;
       font-style: italic;
+  }
+
+  .header__description {
+    padding-left: 50px;
 
   }
