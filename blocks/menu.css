@@ -1,0 +1,36 @@
+.menu{
+    background-color: #0a2750;
+    background-image: url(../images/background_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px; /*this makes the default size bigger*/
+}
+
+.menu__title {  
+font-family: 'Inter', 'Arial', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 52px;
+color: #FFFFFF;
+text-align: center;
+max-width:780px;
+margin:auto; /*centers itself within parent element */
+background-color:aqua;
+margin-top:100px;
+}
+
+.menu__subtitle {
+    font-family: 'Noto Serif', 'Times New Roman',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width:780px;
+    margin:auto; /*centers itself within parent element */
+    background-color:aqua;
+    margin-top:24px;
+}

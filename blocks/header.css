@@ -1,5 +1,5 @@
 .header{
-    background-color: blue;
+    background-color: #FFFFFF;
     background-image: url(../images/background_header.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,7 +11,6 @@
     padding-right:80px;
     padding-bottom:40px;
     /*paddingdoes not affect logo because logo is position absolute AND there is left: 30px which overrides the padding*/
-
 }
 .logo
 {
@@ -38,7 +37,7 @@
   .nav__link {
       color: #000000; /*fixed it defaulting to purple*/
       text-decoration: none;/*removes underline*/
-      font-family: Inter;
+      font-family: 'Inter', 'Arial', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -53,9 +52,8 @@
   .header__title {
     line-height: 72px;/*control the spacing between lines */
     font-weight: 500; /*make it not bold*/
-    background-color: beige;
     margin-top:202px;
-    font-family: Inter; /*fallback ad itt*/
+    font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
     font-size:60px;
   }
@@ -69,7 +67,6 @@
   }
 
   .header__description {
-    background-color: beige;
     margin-top:28px; /* re the brief*/
     font-family: 'Noto Serif', 'Times New Roman',serif;
     font-size: 20px;
@@ -83,7 +80,7 @@
     position:absolute;
     top:124px;
     right:5px;
-    z-index:-1; /*on top of the background. still works without this explicit line of code. CHANGW TO 1*/
+    z-index:1; /*on top of the background. still works without this explicit line of code.*/
   }
 
   .header__paragraphs {
@@ -91,11 +88,10 @@
     bottom:40px;
     right:80px;
     left:80px;
-    font-family: Inter;
+    font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    background-color: beige;
     display:flex;
     align-items:flex-end; /*puts the address at the bottom of the flexbox. was at top by default */
     justify-content: space-between;
