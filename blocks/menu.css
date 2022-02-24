@@ -5,6 +5,8 @@
     background-position: center;
     background-size: cover;
     min-height: 800px; /*this makes the default size bigger*/
+    padding-bottom:100px;
+    padding-top:100px;
 }
 
 .menu__title {  
@@ -17,8 +19,7 @@ color: #FFFFFF;
 text-align: center;
 max-width:780px;
 margin:auto; /*centers itself within parent element */
-background-color:aqua;
-margin-top:100px;
+
 }
 
 .menu__subtitle {
@@ -31,6 +32,48 @@ margin-top:100px;
     text-align: center;
     max-width:780px;
     margin:auto; /*centers itself within parent element */
-    background-color:aqua;
     margin-top:24px;
+    margin-bottom:100px;
+}
+
+.menu__cards {
+    /*flexbox */
+    display:flex;
+    flex-direction: row;
+    column-gap:100px;
+    row-gap:100px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card__title {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.card__list-item {
+    font-family: 'Noto Serif', 'Times New Roman',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: row;
+    max-width: 600px;
+    min-width: 600px;
+    justify-content:space-between; /*put item and price at opposite ends */
+    list-style: none; /*just in case to prevent bullet points */
+    margin-top:16px;
+
+}
+.card__list-divider {
+    border-bottom:1px solid #FFFFFF;
+    flex-grow: 1; /*expand to fill avaliable space */
+
 }
