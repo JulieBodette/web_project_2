@@ -4,9 +4,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 720px; /*this makes the default size big enough to fit the picture. without this, div is awkwardly small*/
+
     padding-top:100px;
     padding-bottom:120px;
+
 
 }
 
@@ -30,8 +31,9 @@ margin: 0 auto 80px; /*centers itself within parent element */
 }
 
 .form {
-
-
+    height:100%; /*without this the form is TINY and takes up hardly any space */
+    /*without this the form was extending past the parent, because the "space" it took up (on inspect element) was tiny */
+    /*so the parent thought it was fine to have it colliding with the margin...because it ignored how big it really was */
 }
 
 .form__input {
@@ -52,6 +54,7 @@ margin: 0 auto 80px; /*centers itself within parent element */
     flex-direction:column;
     row-gap:32px;
     border:0;
+    padding:0px; /* default came with padding that was making the textboxes not wide enough */
 
 }
 
@@ -89,16 +92,24 @@ margin: 0 auto 80px; /*centers itself within parent element */
     color: #FFFFFF;
     background-color: #2F80ED;
     height:64px;
+    transition: opacity 0.5s ease-in 0s;
     /*max-width:385px; */
+}
+
+.form__button:hover {
+    opacity:70%;
 }
 
 .form__checkbox
 {
-
+    padding-right: 300px;
 }
 
 .form__labelandcheckbox {
     margin:auto;
+    display: flex;
+    flex-direction:row;
+    column-gap:12px;
 }
 
 /*multiple ways tog et placeholder to ensure it works on all browsers */
