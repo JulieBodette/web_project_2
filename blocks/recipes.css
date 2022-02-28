@@ -33,16 +33,22 @@
 }
 
 .recipes__videos {
-    width:1000px;
+    
     margin:auto; /*center it*/
     display: flex;
     flex-direction: row;
     column-gap:40px;
-    justify-content:space-between;
+    justify-content:center;
+}
+
+.recipes__video{
+    width:480px; /*width applies to the video AND caption because I put it here */
 }
 
 .recipes__iframe {
-border: 0;
+border: none;/* instead of border:0 or frameborder */
+height:273px;
+width: 100%; /*if you do not do this the video does not fill the entire container, there is black on top and bottom */
 
 }
 
