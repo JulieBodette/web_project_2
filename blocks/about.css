@@ -1,0 +1,82 @@
+@keyframes pulsate {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity:0;
+    }
+    
+}
+.about {
+    padding: 100px 80px;
+    /*padding-bottom: 173px;*/
+    background-color: #0A2850;
+    color: #FFFFFF;
+    position:relative;
+    overflow:hidden;
+    
+    /*ahhh something is weird here */
+    min-width: 1600px;
+    max-width: 1600px;
+    min-height:500px; /*brief did not give a value so I guesstimated it*/
+    box-sizing: border-box; /*without this the width is over 1600px */
+
+  }
+  
+  
+  .about__title {
+    z-index: 1;
+    position:absolute;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+
+  }
+  
+  .about__content {
+    font-family: 'Noto Serif', 'Times New Roman',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    position:absolute;
+    right:100px;
+    top:119px;
+  }
+  
+  .about__paragraph {
+    z-index: 1;
+    max-width:550px; /*so all the text lines up perfectly */
+  }
+  
+  .about__circle {
+      /*circle is created via CSS, there is no image file for it */
+    background: #2F80ED;
+    border-radius: 50%; /*this makes it a circle Also width and height being the same (so it is not oval*/
+    width: 450px;
+    height: 450px;
+    position:absolute;
+    top:-152px;
+    left:-129px;
+    z-index: 0;
+  }
+
+  .about__circle_animation_blurred {
+      animation: pulsate 1.3s ease-in-out 1s infinite;
+      background: #2F80ED;
+    border-radius: 50%; /*this makes it a circle Also width and height being the same (so it is not oval*/
+    width: 450px;
+    height: 450px;
+    position:absolute;
+    top:-152px;
+    left:-129px;
+    z-index: 0;
+
+  }
+  
