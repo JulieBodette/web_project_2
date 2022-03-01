@@ -27,6 +27,11 @@
     justify-content: flex-end;
 
   }
+
+.about__span {
+    /*an alternative to using <br> */
+    display:block;
+}
   
   
   .about__title {
