@@ -12,42 +12,7 @@
     padding-bottom:40px;
     /*paddingdoes not affect logo because logo is position absolute AND there is left: 30px which overrides the padding*/
 }
-.logo
-{
-    position:absolute;
-    top: 30px;
-    left: 30px;
-    position: absolute;
-    /*use position:absolute be3cause it is in the upper left-position is based on it being in upper corner */
-}
-.nav {
-    display:flex;
-    justify-content:space-between;
-    
-  }
-  .nav-links {
-    position:absolute;
-    top: 30px;
-    right: 80px; /*position:absolute overrides the padding of parent so we need this to get it in right spot even tho paddign is 80 */
-    display:flex;
-    column-gap:20px;
-    /*use position:absolute be3cause it is in the upper right-position is based on it being in upper corner */
-  }
 
-  .nav__link {
-      color: #000000; /*fixed it defaulting to purple*/
-      text-decoration: none;/*removes underline*/
-      font-family: 'Inter', 'Arial', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px
-  }
-
-  .nav__link:hover {
-      color: #2F80ED;
-      transition: color 0.25s ease-out 0.5s;
-  }
 
   .header__title {
     line-height: 72px;/*control the spacing between lines */
@@ -76,14 +41,14 @@
   }
 
   .header__image {
-    max-width: 636px;
+    max-width: 646px;
     position:absolute;
     top:124px;
     right:5px;
     z-index:1; /*on top of the background. still works without this explicit line of code.*/
   }
 
-  .header__paragraphs {
+  .header__footer {
     position:absolute;
     bottom:40px;
     right:80px;
@@ -97,6 +62,6 @@
     justify-content: space-between;
   }
   .header__paragraph{
-      list-style: none;
+    margin:0;
   }
 

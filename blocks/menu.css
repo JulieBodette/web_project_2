@@ -55,6 +55,12 @@ margin:auto; /*centers itself within parent element */
     line-height: 30px;
     color: #FFFFFF;
     margin-bottom: 32px;
+    list-style: none; /*to prevent bullet points */
+}
+.card{
+    width: calc(50% - 50px); /*half the parent - half the gap */
+    max-width:600px;
+
 }
 .card__list-item {
     font-family: 'Noto Serif', 'Times New Roman',serif;
@@ -65,8 +71,7 @@ margin:auto; /*centers itself within parent element */
     color: #FFFFFF;
     display:flex;
     flex-direction: row;
-    max-width: 600px;
-    min-width: 600px;
+    
     justify-content:space-between; /*put item and price at opposite ends */
     list-style: none; /*just in case to prevent bullet points */
     margin-top:16px;

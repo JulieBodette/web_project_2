@@ -1,10 +1,13 @@
 @import "normalize.css";
 @import "../blocks/header.css";
+@import "../blocks/logo.css";
+@import "../blocks/nav.css";
 @import "../blocks/menu.css";
 @import "../blocks/recipes.css";
 @import "../blocks/reservation.css";
 @import "../blocks/about.css";
 @import "../blocks/footer.css";
+
 /*
 copy paste this font code when needed
     font-family: 'Inter', 'Arial', sans-serif;

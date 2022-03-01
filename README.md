@@ -4,6 +4,7 @@ This is the second project of the Web Development program at Practicum by Yandex
 
 ## Project features
 
+### Technologies and Techniques
 - Semantic HTML5
 - Flexbox
 - Positioning
@@ -11,6 +12,15 @@ This is the second project of the Web Development program at Practicum by Yandex
 - A custom form
 - CSS animation and transform
 
+### Functionality
+- Single webpage
+- Front end form (no backend-cannot store data)
+- Contains videos
+- Nav bar at top contains links to other sections of page
+
+
 ## Plan on improving the project
 
-Add your ideas here :)
+- Add more videos
+- Add coffeeshop hours to the site
+- Add another circle and animate it
