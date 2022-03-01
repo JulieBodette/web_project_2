@@ -22,6 +22,11 @@
 
 }
 
+.recipes__span{
+    /*an alternative to using <br> */
+    display:block;
+}
+
 .recipes__subtitle {
     max-width:438px;
     margin-bottom:80px;

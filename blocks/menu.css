@@ -35,6 +35,10 @@ margin:auto; /*centers itself within parent element */
     margin-top:24px;
     margin-bottom:100px;
 }
+.menu__span{
+    /*an alternative to using <br> */
+    display:block;
+}
 
 .menu__cards {
     /*flexbox */
