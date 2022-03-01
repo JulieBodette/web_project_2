@@ -25,7 +25,7 @@ margin: 0 auto 80px; /*centers itself within parent element */
 .reservation__form {
     /*width and margins */
     margin:auto;
-    max-width:385px; 
+    max-width:385px;
     height:50px;
 
 }
@@ -63,7 +63,7 @@ margin: 0 auto 80px; /*centers itself within parent element */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px
+    line-height: 20px;
 }
 
 .form__inputandlabel {

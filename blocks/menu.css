@@ -42,7 +42,6 @@ margin:auto; /*centers itself within parent element */
     flex-direction: row;
     column-gap:100px;
     row-gap:100px;
-    justify-content:space-between;
     flex-wrap: wrap;
     justify-content: center;
 }
