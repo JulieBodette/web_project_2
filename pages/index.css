@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import "../vendor/normalize.css";
 @import "../blocks/header.css";
 @import "../blocks/logo.css";
 @import "../blocks/nav.css";
@@ -15,14 +15,22 @@ copy paste this font code when needed
     font-family: 'Noto Serif', 'Times New Roman',serif;
     */
 .page {
-    min-width: 1100px;
-    max-width: 1600px;
-    margin:auto;
-    font-family: 'Inter', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: auto;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
+/*bandaid solution to get rid of horizontal scroll bar */
+/*
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*/
 
 
-    
+

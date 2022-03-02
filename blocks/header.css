@@ -1,73 +1,69 @@
-.header{
-    background-color: #FFFFFF;
-    background-image: url(../images/background_header.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position:relative; /* so that the child can use absolute positioning */
-    min-height: 720px; /*this makes the default size big enough to fit the picture. without this, div is awkwardly small*/
-    max-height: 800px;
-    padding-left:80px;  /*this makes the "Specialty coffee" and "welcome to our study" 80px from the left*/
-    padding-right:80px;
-    padding-bottom:40px;
-    /*paddingdoes not affect logo because logo is position absolute AND there is left: 30px which overrides the padding*/
+.header {
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; /* so that the child can use absolute positioning */
+  min-height: 720px; /*this makes the default size big enough to fit the picture. without this, div is awkwardly small*/
+  max-height: 800px;
+  padding-left: 80px; /*this makes the "Specialty coffee" and "welcome to our study" 80px from the left*/
+  padding-right: 80px;
+  padding-bottom: 40px;
+  /*paddingdoes not affect logo because logo is position absolute AND there is left: 30px which overrides the padding*/
 }
 
+.header__title {
+  line-height: 72px; /*control the spacing between lines */
+  font-weight: 500; /*make it not bold*/
+  margin-top: 202px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  display: block;
+}
 
-  .header__title {
-    line-height: 72px;/*control the spacing between lines */
-    font-weight: 500; /*make it not bold*/
-    margin-top:202px;
-    font-family: 'Inter', 'Arial', sans-serif;
-    font-style: normal;
-    font-size:60px;
-    display: block;
-  }
+.header__titlepart2 {
+  display: block;
+}
 
-  .header__titlepart2 {
-    display: block;
+.header__span-accent {
+  color: #2f80ed;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 60px;
+}
 
-  }
+.header__description {
+  margin-top: 28px; /* re the brief*/
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 580px; /* forces line to break exactly where I want "energize you and / the cozy vibes" */
+}
 
-  .header__span-accent{
-      color:#2F80ED;
-      font-family: 'Noto Serif', 'Times New Roman',serif;
-      font-style: italic;
-      font-size: 60px;
+.header__image {
+  max-width: 646px;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  z-index: 1; /*on top of the background. still works without this explicit line of code.*/
+}
 
-  }
-
-  .header__description {
-    margin-top:28px; /* re the brief*/
-    font-family: 'Noto Serif', 'Times New Roman',serif;
-    font-size: 20px;
-    line-height: 30px;
-    max-width:580px; /* forces line to break exactly where I want "energize you and / the cozy vibes" */
-
-  }
-
-  .header__image {
-    max-width: 646px;
-    position:absolute;
-    top:124px;
-    right:5px;
-    z-index:1; /*on top of the background. still works without this explicit line of code.*/
-  }
-
-  .header__footer {
-    position:absolute;
-    bottom:40px;
-    right:80px;
-    left:80px;
-    font-family: 'Inter', 'Arial', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display:flex;
-    align-items:flex-end; /*puts the address at the bottom of the flexbox. was at top by default */
-    justify-content: space-between;
-  }
-  .header__paragraph{
-    margin:0;
-  }
-
+.header__footer {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  left: 80px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end; /*puts the address at the bottom of the flexbox. was at top by default */
+  justify-content: space-between;
+  color: #838383;
+}
+.header__paragraph {
+  margin: 0;
+}
