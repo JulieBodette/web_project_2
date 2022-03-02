@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   padding-top: 100px;
   padding-bottom: 120px;
 }
@@ -17,7 +16,7 @@
   line-height: 52px;
   text-align: center;
   max-width: 300px; /* There nmight be a better way than manually setting it */
-  margin: 0 auto 80px; /*centers itself within parent element */
+  margin: 0 auto 80px; /*centers itself within parent element top= 0 right/left=auto bottom=80px*/
 }
 
 .reservation__form {
@@ -51,6 +50,7 @@
   flex-direction: column;
   row-gap: 32px;
   border: 0;
+  margin: 0px; /*reset */
   padding: 0px; /* default came with padding that was making the textboxes not wide enough */
 }
 

@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 .nav-links {
   position: absolute;

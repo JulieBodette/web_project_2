@@ -18,7 +18,7 @@
   color: #ffffff;
   text-align: center;
   max-width: 780px;
-  margin: auto; /*centers itself within parent element */
+  margin: 0 auto; /*centers itself within parent element 0 is bottom/top auto is left/right*/
 }
 
 .menu__subtitle {
@@ -30,7 +30,7 @@
   color: #ffffff;
   text-align: center;
   max-width: 780px;
-  margin: auto; /*centers itself within parent element */
+  margin: 0 auto; /*centers itself within parent element 0 is bottom/top auto is left/right*/
   margin-top: 24px;
   margin-bottom: 100px;
 }
@@ -56,12 +56,15 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  margin-bottom: 32px;
+  margin: 0px 0px 32px 0px; /*top right bottom left */
+  padding: 0; /*reset padding to 0*/
   list-style: none; /*to prevent bullet points */
 }
 .card {
   width: calc(50% - 50px); /*half the parent - half the gap */
   max-width: 600px;
+  margin: 0; /*reset margin to 0*/
+  padding: 0; /*reset padding to 0*/
 }
 .card__list-item {
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -72,10 +75,10 @@
   color: #ffffff;
   display: flex;
   flex-direction: row;
-
   justify-content: space-between; /*put item and price at opposite ends */
   list-style: none; /*just in case to prevent bullet points */
-  margin-top: 16px;
+  margin: 16px 0px 0px 0px; /*top right bottom left */
+  padding: 0; /*reset padding to 0*/
 }
 .card__list-divider {
   border-bottom: 1px solid #ffffff;

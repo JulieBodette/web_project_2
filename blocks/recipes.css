@@ -18,6 +18,7 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  margin: 0; /*reset */
 }
 
 .recipes__span {
@@ -27,7 +28,7 @@
 
 .recipes__subtitle {
   max-width: 438px;
-  margin-bottom: 80px;
+  margin: 0px 0px 80px 0px; /*top right bottom left */
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
