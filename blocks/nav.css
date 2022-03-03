@@ -1,12 +1,10 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: end; /*align the nav links to the right side of the page */
   margin: 0;
+  padding-top: 30px;
 }
-.nav-links {
-  position: absolute;
-  top: 30px;
-  right: 80px; /*position:absolute overrides the padding of parent so we need this to get it in right spot even tho paddign is 80 */
+.nav__links {
   display: flex;
   column-gap: 20px;
   /*use position:absolute be3cause it is in the upper right-position is based on it being in upper corner */

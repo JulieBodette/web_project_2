@@ -11,8 +11,7 @@
   }
 }
 .about {
-  padding: 100px 80px;
-  /*padding-bottom: 173px;*/
+  padding: 119px 80px 173px 0px; /*padding for paragraph top right bottom left*/
   background-color: #0a2850;
   color: #ffffff;
   position: relative;
@@ -55,6 +54,11 @@
   z-index: 1;
   max-width: 550px; /*so all the text lines up perfectly */
   margin: 0px 0px 10px 0px; /* top right bottom left  manually set the margins */
+}
+
+/*the last paragraph has 0 margins */
+.about__paragraph:last-of-type {
+  margin: 0px;
 }
 
 .about__circle {
