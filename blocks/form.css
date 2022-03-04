@@ -21,6 +21,7 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
+  margin: 0px; /*reset margins */
   row-gap: 0px;
   border: 0;
   padding: 0px; /* default came with padding that was making the textboxes not wide enough */
@@ -33,6 +34,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+
+.form__label_type_checkbox {
+  margin-bottom: 0px;
 }
 
 /*last input has 0 margin after it */
