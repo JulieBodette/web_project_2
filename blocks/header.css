@@ -16,14 +16,16 @@
 .header__title {
   line-height: 72px; /*control the spacing between lines */
   font-weight: 500; /*make it not bold*/
-  margin: 202px 0px 0px; /*top right/left bottom */
+  position: absolute;
+  top: 202px;
+  z-index: 2; /*absolute positioning and z-index so that it is on top of picture at low screen width */
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-size: 60px;
   display: block;
 }
 
-.header__titlepart2 {
+.header__titleend {
   display: block;
 }
 
@@ -35,7 +37,9 @@
 }
 
 .header__description {
-  margin: 28px 0px 0px; /*top right/left bottom */
+  position: absolute;
+  top: 378px;
+  z-index: 2; /*absolute positioning and z-index so that it is on top of picture at low screen width */
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;

@@ -1,0 +1,93 @@
+.form {
+  height: 100%; /*without this the form is TINY and takes up hardly any space */
+  /*without this the form was extending past the parent, because the "space" it took up (on inspect element) was tiny */
+  /*so the parent thought it was fine to have it colliding with the margin...because it ignored how big it really was */
+}
+
+.form__input {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+  border-radius: 4px;
+  border-color: #838383;
+  border-style: solid; /*gets rid of the weird shadow on the border */
+  padding: 10px; /*make textbox a little taller to look like the brief, padding used instead of height*/
+  margin-bottom: 32px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  border: 0;
+  padding: 0px; /* default came with padding that was making the textboxes not wide enough */
+}
+
+.form__label {
+  margin-bottom: 8px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*last input has 0 margin after it */
+.form__input:last-of-type {
+  margin-bottom: 0px;
+}
+
+.form__buttonandcheckbox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin: 32px 0px 0px 0px;
+  border: 0;
+  padding: 0px;
+}
+
+.form__button {
+  margin: 0px;
+  padding: 0px;
+  border: 0px; /* reset border */
+  border-radius: 4px; /*set border as specified in brief */
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #2f80ed;
+  height: 64px;
+  transition: opacity 0.5s ease-in 0s;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__checkbox {
+  padding-right: 300px;
+}
+
+.form__labelandcheckbox {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  border: 0; /*had to delete fieldset border */
+  padding: 0px;
+}
+
+.form__input::placeholder {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+  padding-left: 10px;
+}

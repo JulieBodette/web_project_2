@@ -55,6 +55,8 @@
 }
 
 .recipes__video-caption {
+  padding: 24px 0px 0px 0px; /*top right bottom left */
+  margin: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
