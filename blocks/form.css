@@ -36,6 +36,7 @@
   line-height: 20px;
 }
 
+/*fix the margin after "I agree with the terms of use"*/
 .form__label_type_checkbox {
   margin-bottom: 0px;
 }
